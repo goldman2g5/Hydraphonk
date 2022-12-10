@@ -87,7 +87,7 @@
                 <Label x:Name="TaskLabel" 
                     Content="Задание" IsEnabled="False" />
                 <syncfusion:ComboBoxAdv x:Name="TaskComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" SelectionChanged="TaskComboBox_SelectionChanged">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
+                    <syncfusion:ComboBoxItemAdv Content="Понюхать бебры"/>
                     <syncfusion:ComboBoxItemAdv Content="Item 2"/>
                     <syncfusion:ComboBoxItemAdv Content="Item 3"/>
                     <syncfusion:ComboBoxItemAdv Content="Item 4"/>

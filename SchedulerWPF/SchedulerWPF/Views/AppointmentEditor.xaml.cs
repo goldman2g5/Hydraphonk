@@ -120,7 +120,8 @@ namespace WpfScheduler.Helper
             if (appointment == null)
             {
                 var scheduleAppointment = new ScheduleAppointment();
-                scheduleAppointment.Subject = this.TaskTypeComboBox.Text;
+                string subject = this.TaskComboBox.SelectedItem.ToString();
+                scheduleAppointment.Subject = subject.Substring(subject.LastIndexOf(':') + 2);
                 scheduleAppointment.StartTime = this.StartDatePicker.Value.Value.Date.Add(this.StartTimePicker.Value.Value.TimeOfDay);
                 scheduleAppointment.EndTime = this.EndDatePicker.Value.Value.Date.Add(this.EndTimePicker.Value.Value.TimeOfDay);
                 scheduleAppointment.IsAllDay = (bool)this.allDay.IsChecked;
