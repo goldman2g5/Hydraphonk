@@ -18,10 +18,7 @@ namespace WpfScheduler
             ScheduleAppointmentCollection = new ScheduleAppointmentCollection();
             ScheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
-                StartTime = DateTime.Now,
-                EndTime = DateTime.Now.AddHours(1),
-                Subject = "Meeting",
-                Location = "Hutchison road",
+                
             });
         }
         public ScheduleAppointmentCollection ScheduleAppointmentCollection

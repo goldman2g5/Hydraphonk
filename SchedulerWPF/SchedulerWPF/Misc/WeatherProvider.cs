@@ -17,22 +17,24 @@ namespace WpfScheduler.Misc
         public static List<WeatherModel> WeekForecast()
         {
             List<WeatherModel> result = new List<WeatherModel>();
-            foreach (var i in result)
+            int plus_days = 0;
+            foreach (var i in Enumerable.Range(1, 6))
             {
-                result.Add(GetRandomToday());
+                
             }
-            return result;
+
+                return result;
         }
 
 
-        public static WeatherModel GetRandomToday()
+        public static WeatherModel GetRandomToday(int plus_days=0)
         {
-            return new WeatherModel()
-            {
-                weather = r.Next(0, 5) == 0 ? "Rain" : "NotRain",
-                wind = r.Next(0, 5) == 0 ? 5.10 : 3.00,
-                temp = r.Next(0, 5) == 0 ? 15 : 24
-            };
+            string weather = r.Next(0, 5) == 0 ? "Rain" : "NotRain";
+            double wind = r.Next(0, 5) == 0 ? 5.10 : 3.00;
+            double temp = r.Next(0, 5) == 0 ? 23 : 18;
+            DateTime from = DateTime.Now.AddHours(r.Next(0, 3)).AddMinutes(r.Next(0, 60)).AddDays(plus_days);
+            DateTime to = from.AddHours(r.Next(0, 3)).AddMinutes(r.Next(0, 60));
+            return new WeatherModel(weather, wind, temp, from, to);
         }
     }
 

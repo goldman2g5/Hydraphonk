@@ -18,6 +18,7 @@ using Syncfusion.Windows.Tools.Controls;
 using WpfScheduler.Behavior;
 using WpfScheduler.Model;
 using WpfScheduler.ViewModel;
+using System.Collections.ObjectModel;
 
 namespace WpfScheduler
 {
@@ -43,6 +44,12 @@ namespace WpfScheduler
         private void ButtonAdv_Click()
         {
 
+        }
+
+        private void TabItem_ContextMenuOpening(object sender, ContextMenuEventArgs e)
+        {
+            var scheduleAppointment = new TaskAppointmentModel();
+            scheduleAppointment.Subject = "";
         }
     }
 }
