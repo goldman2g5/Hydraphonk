@@ -36,12 +36,13 @@
             <TabItem Header="Календарь">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="1231*"/>
                     </Grid.ColumnDefinitions>
                     <syncfusion:SfScheduler x:Name="Schedule"
                                 FirstDayOfWeek="Monday"
                                 ViewType="Week"
-                                ItemsSource="{Binding ScheduleAppointmentCollection}"/>
+                                ItemsSource="{Binding ScheduleAppointmentCollection}" Grid.ColumnSpan="2" Height="676" VerticalAlignment="Center"/>
                 </Grid>
             </TabItem>
         </TabControl>

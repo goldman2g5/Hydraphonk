@@ -126,6 +126,8 @@
                     <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
+            <Label x:Name="WeatherTest" Content="Label"/>
+            <syncfusion:ButtonAdv Content="ButtonAdv" Height="35" Label="ButtonAdv" Width="75" Click="ButtonAdv_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Margin="10,21,0,55" Grid.ColumnSpan="2" Orientation="Vertical">
             <Label x:Name="StartLabel"  Content="Start Time" />

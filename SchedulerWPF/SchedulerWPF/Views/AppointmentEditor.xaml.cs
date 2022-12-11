@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -294,6 +295,15 @@ namespace WpfScheduler.Helper
             MachineryLabel.IsEnabled = true;
             MachineryComboBox.IsEnabled = true;
             MachineryComboBox.SelectedIndex = 0;
+        }
+
+        private void ButtonAdv_Click(object sender, RoutedEventArgs e)
+        {
+            string url = "http://api.openweathermap.org/data/2.5/weather?q=" + "Moscow" + "&appid=2de143494c0b295cca9337e1e96b00e0";
+            using (WebClient wc = new WebClient())
+            {
+                WeatherTest.Content = wc.DownloadString(url);
+            }
         }
     }
 }
