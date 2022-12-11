@@ -9,15 +9,35 @@
         <local:SchedulerViewModel/>
     </Window.DataContext>
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
-                                Grid.Row="1"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="1147*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="MainWindowTabControl" Grid.ColumnSpan="2">
+            <TabItem Header="Личный Кабинет">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="MainMenuTabContorl" TabStripPlacement="Left">
+                        <TabItem Header="TabItem">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                        <TabItem Header="TabItem">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Календарь">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <syncfusion:SfScheduler x:Name="Schedule"
                                 FirstDayOfWeek="Monday"
                                 ViewType="Week"
                                 ItemsSource="{Binding ScheduleAppointmentCollection}"/>
-        <syncfusion:TabControlExt Margin="0,176,0,-176">
-            <syncfusion:TabItemExt Header="TabItem1"/>
-            <syncfusion:TabItemExt Header="TabItem2"/>
-        </syncfusion:TabControlExt>
+                </Grid>
+            </TabItem>
+        </TabControl>
         <interactivity:Interaction.Behaviors>
             <local:SchedulerBehavior/>
         </interactivity:Interaction.Behaviors>
