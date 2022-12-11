@@ -48,8 +48,7 @@ namespace WpfScheduler
 
         private void TabItem_ContextMenuOpening(object sender, ContextMenuEventArgs e)
         {
-            var scheduleAppointment = new TaskAppointmentModel();
-            scheduleAppointment.Subject = "";
+
         }
     }
 }

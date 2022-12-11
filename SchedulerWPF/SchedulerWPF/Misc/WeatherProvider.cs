@@ -11,20 +11,20 @@ using WpfScheduler.Model;
 
 namespace WpfScheduler.Misc
 {
-    static class WeatherProvider
+    public static class WeatherProvider
     {
         private static Random r = new Random();
-        public static List<WeatherModel> WeekForecast()
-        {
-            List<WeatherModel> result = new List<WeatherModel>();
-            int plus_days = 0;
-            foreach (var i in Enumerable.Range(1, 6))
-            {
+        //public static List<WeatherModel> WeekForecast()
+        //{
+        //    List<WeatherModel> result = new List<WeatherModel>();
+        //    int plus_days = 0;
+        //    foreach (var i in Enumerable.Range(1, 6))
+        //    {
                 
-            }
+        //    }
 
-                return result;
-        }
+        //    return result;
+        //}
 
 
         public static WeatherModel GetRandomToday(int plus_days=0)

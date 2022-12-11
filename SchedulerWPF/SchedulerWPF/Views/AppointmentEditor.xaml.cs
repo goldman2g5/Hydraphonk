@@ -139,7 +139,6 @@ namespace WpfScheduler.Helper
                 scheduleAppointment.EmployeeTitle = ComboBoxToStr(EmployeeTitleComboBox);
                 scheduleAppointment.MachineryType = ComboBoxToStr(MachineryTypeComboBox);
                 scheduleAppointment.Machinery = ComboBoxToStr(MachineryComboBox);
-
                 if ((bool)this.timeZone.IsChecked)
                 {
                     scheduleAppointment.StartTimeZone = this.TimeZoneMenu.Text;
