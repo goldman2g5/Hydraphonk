@@ -45,11 +45,17 @@
     <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Xaml.4.0.0.1\lib\PresentationFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Data.WPF, Version=20.3460.0.60, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Data.WPF.20.3.0.60\lib\net46\Syncfusion.Data.WPF.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Licensing, Version=20.3460.0.60, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Licensing.20.3.0.60\lib\net46\Syncfusion.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfBusyIndicator.WPF, Version=19.1451.0.56, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.SfBusyIndicator.WPF.19.1.0.56\lib\net451\Syncfusion.SfBusyIndicator.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfGrid.WPF, Version=20.3460.0.60, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.SfGrid.WPF.20.3.0.60\lib\net46\Syncfusion.SfGrid.WPF.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfInput.WPF, Version=19.1451.0.56, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.SfInput.WPF.19.1.0.56\lib\net451\Syncfusion.SfInput.WPF.dll</HintPath>
@@ -98,7 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Behavior\DataGridCommitEditBehavior.cs" />
+    <Compile Include="Model\OrderInfo.cs" />
     <Compile Include="Model\TaskAppointmentModel.cs" />
+    <Compile Include="ViewModel\OrderInfoViewModel.cs" />
     <Compile Include="Views\AppointmentEditor.xaml.cs">
       <DependentUpon>AppointmentEditor.xaml</DependentUpon>
     </Compile>

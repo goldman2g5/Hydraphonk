@@ -4,10 +4,13 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:local="clr-namespace:WpfScheduler"
         xmlns:interactivity="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:viewModel="clr-namespace:WpfScheduler.ViewModel"
         WindowStartupLocation="CenterScreen" Width="1280" Height="720" >
     <Window.DataContext>
-        <local:SchedulerViewModel/>
+        <viewModel:OrderInfoViewModel/>
     </Window.DataContext>
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="133*"/>
@@ -18,7 +21,11 @@
                 <Grid Background="#FFE5E5E5">
                     <TabControl x:Name="MainMenuTabContorl" TabStripPlacement="Left">
                         <TabItem Header="TabItem">
-                            <Grid Background="#FFE5E5E5"/>
+                            <Grid x:Name="Root_Grid" Background="#FFE5E5E5">
+                                <syncfusion:SfDataGrid x:Name="dataGrid" AddNewRowPosition="Bottom" AddNewRowText="Добавить новую запись" AutoGenerateColumns="True" HorizontalAlignment="Left" VerticalAlignment="Top" ItemsSource="{Binding Orders}" Height="650" Width="1192" AddNewRowInitiating="dataGrid_AddNewRowInitiating" />
+
+                            </Grid>
+
                         </TabItem>
                         <TabItem Header="TabItem">
                             <Grid Background="#FFE5E5E5"/>

@@ -132,3 +132,7 @@ C:\Users\timar\Source\Repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\obj\Debug\WpfS
 C:\Users\timar\Source\Repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\obj\Debug\WpfScheduler.pdb
 C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.Tools.WPF.dll
 C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.Tools.WPF.xml
+C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\bin\Debug\Syncfusion.SfGrid.WPF.xml

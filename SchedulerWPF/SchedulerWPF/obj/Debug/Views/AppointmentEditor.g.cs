@@ -11,7 +11,12 @@
 
 using Syncfusion;
 using Syncfusion.SfSkinManager;
+using Syncfusion.UI.Xaml.Controls.DataPager;
+using Syncfusion.UI.Xaml.Grid;
+using Syncfusion.UI.Xaml.Grid.RowFilter;
 using Syncfusion.UI.Xaml.Scheduler;
+using Syncfusion.UI.Xaml.TreeGrid;
+using Syncfusion.UI.Xaml.TreeGrid.Filtering;
 using Syncfusion.Windows;
 using Syncfusion.Windows.Controls.Input;
 using Syncfusion.Windows.Controls.Notification;
