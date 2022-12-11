@@ -28,9 +28,7 @@ namespace WpfScheduler.ViewModel
 
         private void GenerateOrders()
         {
-            //DataBase db = new DataBase();
-            //db.SwitchTable("tasks");
-            //_orders.Add(new OrderInfo(1001, db.values[8][1], "Germany", "ALFKI", "Berlin"));
+            _orders.Add(new OrderInfo(1001, "   ", "Germany", "ALFKI", "Berlin"));
             _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
             _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
             _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));

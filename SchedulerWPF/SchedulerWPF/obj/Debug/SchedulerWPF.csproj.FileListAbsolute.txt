@@ -236,3 +236,5 @@ C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\obj\Debug\Sche
 C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\obj\Debug\SchedulerWPF.csproj.CopyComplete
 C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\obj\Debug\WpfScheduler.exe
 C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\obj\Debug\WpfScheduler.pdb
+C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\timar\Source\Repos\Hydraphonk9\SchedulerWPF\SchedulerWPF\bin\Debug\Newtonsoft.Json.xml
