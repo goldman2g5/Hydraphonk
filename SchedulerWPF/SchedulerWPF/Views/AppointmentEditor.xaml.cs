@@ -132,12 +132,12 @@ namespace WpfScheduler.Helper
                 scheduleAppointment.Notes = this.description.Text;
                 scheduleAppointment.Reminders = (ObservableCollection<SchedulerReminder>)this.ReminderList.ItemsSource;
                 scheduleAppointment.Field = ComboBoxToStr(FieldComboBox);
+                scheduleAppointment.TaskType = ComboBoxToStr(TaskTypeComboBox);
                 scheduleAppointment.Task = ComboBoxToStr(TaskTypeComboBox);
+                scheduleAppointment.Employee = ComboBoxToStr(EmployeeComboBox);
                 scheduleAppointment.EmployeeTitle = ComboBoxToStr(EmployeeTitleComboBox);
-                scheduleAppointment.MachineryType = MachineryTypeComboBox.SelectedItem.ToString().Substring(MachineryTypeComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
-                scheduleAppointment.Machinery = MachineryComboBox.SelectedItem.ToString().Substring(MachineryComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
-                scheduleAppointment.Field = FieldComboBox.SelectedItem.ToString().Substring(FieldComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
-
+                scheduleAppointment.MachineryType = ComboBoxToStr(MachineryTypeComboBox);
+                scheduleAppointment.Machinery = ComboBoxToStr(MachineryComboBox);
 
                 if ((bool)this.timeZone.IsChecked)
                 {
@@ -153,14 +153,19 @@ namespace WpfScheduler.Helper
             }
             else
             {
-                appointment.Subject = this.TaskTypeComboBox.Text;
+                appointment.Subject = ComboBoxToStr(TaskComboBox);
                 appointment.StartTime = this.StartDatePicker.Value.Value.Date.Add(this.StartTimePicker.Value.Value.TimeOfDay);
                 appointment.EndTime = this.EndDatePicker.Value.Value.Date.Add(this.EndTimePicker.Value.Value.TimeOfDay);
                 appointment.IsAllDay = (bool)this.allDay.IsChecked;
                 appointment.Notes = this.description.Text;
                 appointment.Reminders = (ObservableCollection<SchedulerReminder>)this.ReminderList.ItemsSource;
-                appointment.StartTimeZone = this.TimeZoneMenu.Text;
-                appointment.EndTimeZone = this.TimeZoneMenu.Text;
+                //appointment.Field = ComboBoxToStr(FieldComboBox);
+                //appointment.TaskType = ComboBoxToStr(TaskTypeComboBox);
+                //appointment.Task = ComboBoxToStr(TaskTypeComboBox);
+                //appointment.Employee = ComboBoxToStr(EmployeeComboBox);
+                //appointment.EmployeeTitle = ComboBoxToStr(EmployeeTitleComboBox);
+                //appointment.MachineryType = ComboBoxToStr(MachineryTypeComboBox);
+                //appointment.Machinery = ComboBoxToStr(MachineryComboBox);
             }
             this.Close();
         }
@@ -272,7 +277,8 @@ namespace WpfScheduler.Helper
         {
             EmployeeTitleLabel.IsEnabled = true;
             EmployeeTitleComboBox.IsEnabled = true;
-            EmployeeComboBox.SelectedIndex = 0;
+            EmployeeTitleComboBox.SelectedIndex = 0;
+            TaskComboBox.Items.Add(new ComboBoxItemAdv() {Content = "поесть говна"});
 
         }
 
