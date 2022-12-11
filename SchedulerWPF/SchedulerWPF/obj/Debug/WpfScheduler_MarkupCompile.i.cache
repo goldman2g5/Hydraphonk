@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\App.xaml
-2-1143937787
+3-538042774
 
-13-1971369160
+14-210366085
 271406477367
-Views\AppointmentEditor.xaml;MainWindow.xaml;
+Views\AppointmentEditor.xaml;MainWindow.xaml;Views\OrderInfoEditor.xaml;
 
 True
 

@@ -112,6 +112,9 @@
       <DependentUpon>AppointmentEditor.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\SchedulerViewModel.cs" />
+    <Compile Include="Views\OrderInfoEditor.xaml.cs">
+      <DependentUpon>OrderInfoEditor.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\AppointmentEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -129,6 +132,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\OrderInfoEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -34,5 +34,9 @@ namespace WpfScheduler
             InitializeComponent();
         }
 
+        private void dataGrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs e)
+        {
+
+        }
     }
 }
