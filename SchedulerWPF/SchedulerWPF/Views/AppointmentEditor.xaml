@@ -49,11 +49,7 @@
                 <Label x:Name="FieldLabel" 
                     Content="Поле" />
                 <syncfusion:ComboBoxAdv x:Name="FieldComboBox" Height="30" Width="150" HorizontalAlignment="Left" SelectionChanged="FieldComboBox_SelectionChanged">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                    <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
             <StackPanel Orientation="Vertical" RenderTransformOrigin="0.5,0.5" Height="59" Width="207">
@@ -68,11 +64,7 @@
                 <Label x:Name="TaskTypeLabel" 
                     Content="Тип задания" IsEnabled="False" />
                 <syncfusion:ComboBoxAdv x:Name="TaskTypeComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" SelectionChanged="TaskTypeComboBox_SelectionChanged">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                    <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
             <StackPanel Orientation="Vertical" RenderTransformOrigin="0.5,0.5" Height="59" Width="207">
@@ -87,11 +79,7 @@
                 <Label x:Name="TaskLabel" 
                     Content="Задание" IsEnabled="False" />
                 <syncfusion:ComboBoxAdv x:Name="TaskComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" SelectionChanged="TaskComboBox_SelectionChanged">
-                    <syncfusion:ComboBoxItemAdv Content="Понюхать бебры"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                    <syncfusion:ComboBoxItemAdv Content="Понюхать бебру"/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
             <StackPanel Orientation="Vertical" RenderTransformOrigin="0.5,0.5" Height="59" Width="207">
@@ -106,11 +94,7 @@
                 <Label x:Name="EmployeeTitleLabel" 
                 Content="Должность сотрудника" IsEnabled="False" />
                 <syncfusion:ComboBoxAdv x:Name="EmployeeTitleComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" SelectionChanged="EmployeeTitleComboBox_SelectionChanged_1">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                    <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
             <StackPanel Orientation="Vertical" RenderTransformOrigin="0.354,0.488" Height="59" Width="207">
@@ -124,12 +108,8 @@
                 </StackPanel.RenderTransform>
                 <Label x:Name="EmployeeLabel" 
                 Content="Сотрудник" IsEnabled="False" />
-                <syncfusion:ComboBoxAdv x:Name="EmployeeComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                <syncfusion:ComboBoxAdv x:Name="EmployeeComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" IsSynchronizedWithCurrentItem="False">
+                    <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
         </StackPanel>
@@ -137,21 +117,13 @@
             <Label x:Name="MachineryTypeLabel" 
                Content="Тип техники" IsEnabled="False" />
             <syncfusion:ComboBoxAdv x:Name="MachineryTypeComboBox" Height="30" Width="150" HorizontalAlignment="Left" IsEnabled="False" SelectionChanged="MachineryTypeComboBox_SelectionChanged">
-                <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                <syncfusion:ComboBoxItemAdv Content=""/>
             </syncfusion:ComboBoxAdv>
             <StackPanel Orientation="Vertical" Height="59" Width="235">
                 <Label x:Name="MachineryLabel" 
                 Content="Техника" IsEnabled="False" HorizontalAlignment="Left" />
                 <syncfusion:ComboBoxAdv x:Name="MachineryComboBox" Height="30" Width="150" IsEnabled="False" SelectionChanged="MachineryComboBox_SelectionChanged" RenderTransformOrigin="-0.193,0.556" HorizontalAlignment="Left">
-                    <syncfusion:ComboBoxItemAdv Content="Item 1"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 2"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 3"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 4"/>
-                    <syncfusion:ComboBoxItemAdv Content="Item 5"/>
+                    <syncfusion:ComboBoxItemAdv Content=""/>
                 </syncfusion:ComboBoxAdv>
             </StackPanel>
         </StackPanel>

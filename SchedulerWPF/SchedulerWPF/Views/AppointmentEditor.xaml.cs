@@ -18,6 +18,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfScheduler.Model;
 
 namespace WpfScheduler.Helper
 {
@@ -117,16 +118,26 @@ namespace WpfScheduler.Helper
 
         private void OnSaveClicked(object sender, RoutedEventArgs e)
         {
+            string ComboBoxToStr(ComboBoxAdv cb)
+            {
+                return cb.SelectedItems == null ? "" : cb.SelectedItem.ToString().Substring(cb.SelectedItem.ToString().LastIndexOf(':') + 2);
+            }
             if (appointment == null)
             {
-                var scheduleAppointment = new ScheduleAppointment();
-                string subject = this.TaskComboBox.SelectedItem.ToString();
-                scheduleAppointment.Subject = subject.Substring(subject.LastIndexOf(':') + 2);
+                var scheduleAppointment = new TaskAppointmentModel();
+                scheduleAppointment.Subject = ComboBoxToStr(TaskComboBox);
                 scheduleAppointment.StartTime = this.StartDatePicker.Value.Value.Date.Add(this.StartTimePicker.Value.Value.TimeOfDay);
                 scheduleAppointment.EndTime = this.EndDatePicker.Value.Value.Date.Add(this.EndTimePicker.Value.Value.TimeOfDay);
                 scheduleAppointment.IsAllDay = (bool)this.allDay.IsChecked;
                 scheduleAppointment.Notes = this.description.Text;
                 scheduleAppointment.Reminders = (ObservableCollection<SchedulerReminder>)this.ReminderList.ItemsSource;
+                scheduleAppointment.Field = ComboBoxToStr(FieldComboBox);
+                scheduleAppointment.Task = ComboBoxToStr(TaskTypeComboBox);
+                scheduleAppointment.EmployeeTitle = ComboBoxToStr(EmployeeTitleComboBox);
+                scheduleAppointment.MachineryType = MachineryTypeComboBox.SelectedItem.ToString().Substring(MachineryTypeComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
+                scheduleAppointment.Machinery = MachineryComboBox.SelectedItem.ToString().Substring(MachineryComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
+                scheduleAppointment.Field = FieldComboBox.SelectedItem.ToString().Substring(FieldComboBox.SelectedItem.ToString().LastIndexOf(':') + 2);
+
 
                 if ((bool)this.timeZone.IsChecked)
                 {
@@ -235,26 +246,33 @@ namespace WpfScheduler.Helper
         {
             MachineryLabel.IsEnabled = true;
             MachineryComboBox.IsEnabled = true;
+            MachineryComboBox.SelectedIndex = 0;
+
         }
 
         private void FieldComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             MachineryTypeLabel.IsEnabled = true;
             MachineryTypeComboBox.IsEnabled = true;
+            MachineryTypeComboBox.SelectedIndex = 0;
             TaskTypeComboBox.IsEnabled = true;
             TaskTypeLabel.IsEnabled = true;
+            TaskTypeComboBox.SelectedIndex = 0;
         }
 
         private void TaskTypeComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             TaskComboBox.IsEnabled = true;
             TaskComboBox.IsEnabled = true;
+            TaskComboBox.SelectedIndex = 0;
+
         }
 
         private void TaskComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             EmployeeTitleLabel.IsEnabled = true;
             EmployeeTitleComboBox.IsEnabled = true;
+            EmployeeComboBox.SelectedIndex = 0;
 
         }
 
@@ -262,12 +280,14 @@ namespace WpfScheduler.Helper
         {
             EmployeeComboBox.IsEnabled = true;
             EmployeeLabel.IsEnabled = true;
+            EmployeeComboBox.SelectedIndex = 0;
         }
 
         private void MachineryTypeComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             MachineryLabel.IsEnabled = true;
             MachineryComboBox.IsEnabled = true;
+            MachineryComboBox.SelectedIndex = 0;
         }
     }
 }

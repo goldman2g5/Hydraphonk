@@ -95,6 +95,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\TaskAppointmentModel.cs" />
     <Compile Include="Views\AppointmentEditor.xaml.cs">
       <DependentUpon>AppointmentEditor.xaml</DependentUpon>
     </Compile>
@@ -147,5 +148,6 @@
   <ItemGroup>
     <Resource Include="Resource\delete.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
