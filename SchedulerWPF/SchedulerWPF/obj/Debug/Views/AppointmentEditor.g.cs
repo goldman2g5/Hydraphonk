@@ -16,6 +16,7 @@ using Syncfusion.Windows;
 using Syncfusion.Windows.Controls.Input;
 using Syncfusion.Windows.Controls.Notification;
 using Syncfusion.Windows.Shared;
+using Syncfusion.Windows.Tools;
 using Syncfusion.Windows.Tools.Controls;
 using System;
 using System.Diagnostics;

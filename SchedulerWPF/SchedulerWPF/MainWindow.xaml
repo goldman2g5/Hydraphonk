@@ -4,7 +4,7 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:local="clr-namespace:WpfScheduler"
         xmlns:interactivity="http://schemas.microsoft.com/xaml/behaviors"
-        WindowStartupLocation="CenterScreen" >
+        WindowStartupLocation="CenterScreen" Width="1280" Height="720" >
     <Window.DataContext>
         <local:SchedulerViewModel/>
     </Window.DataContext>
@@ -14,6 +14,10 @@
                                 FirstDayOfWeek="Monday"
                                 ViewType="Week"
                                 ItemsSource="{Binding ScheduleAppointmentCollection}"/>
+        <syncfusion:TabControlExt Margin="0,176,0,-176">
+            <syncfusion:TabItemExt Header="TabItem1"/>
+            <syncfusion:TabItemExt Header="TabItem2"/>
+        </syncfusion:TabControlExt>
         <interactivity:Interaction.Behaviors>
             <local:SchedulerBehavior/>
         </interactivity:Interaction.Behaviors>
