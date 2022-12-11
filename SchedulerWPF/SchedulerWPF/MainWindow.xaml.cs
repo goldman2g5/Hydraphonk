@@ -38,5 +38,10 @@ namespace WpfScheduler
         {
 
         }
+
+        private void ButtonAdv_Click()
+        {
+
+        }
     }
 }

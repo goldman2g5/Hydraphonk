@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\obj\Debug\
+C:\Users\timar\source\repos\Hydraphonk7\SchedulerWPF\SchedulerWPF\obj\Debug\
 WpfScheduler
 none
 false
 DEBUG;TRACE
-C:\Users\timar\source\repos\Hydraphonk5\SchedulerWPF\SchedulerWPF\App.xaml
-3-538042774
+C:\Users\timar\source\repos\Hydraphonk7\SchedulerWPF\SchedulerWPF\App.xaml
+2-1143937787
 
-14-210366085
-271406477367
-Views\AppointmentEditor.xaml;MainWindow.xaml;Views\OrderInfoEditor.xaml;
+14-694344826
+27-1170401805
+Views\AppointmentEditor.xaml;MainWindow.xaml;
 
-True
+False
 

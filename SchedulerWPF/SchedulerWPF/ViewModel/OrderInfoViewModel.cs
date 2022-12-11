@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using WpfScheduler.Kostili;
 using WpfScheduler.Model;
 
 namespace WpfScheduler.ViewModel
@@ -26,7 +28,9 @@ namespace WpfScheduler.ViewModel
 
         private void GenerateOrders()
         {
-            _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+            DataBase db = new DataBase();
+            db.SwitchTable("tasks");
+            _orders.Add(new OrderInfo(1001, db.values[8][1], "Germany", "ALFKI", "Berlin"));
             _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
             _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
             _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
